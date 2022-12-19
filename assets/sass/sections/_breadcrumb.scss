@@ -1,0 +1,16 @@
+// /* Breadcrumb */
+.breadcrumb-area {
+  background-color: var(--primary-color);
+  padding: 200px 0 115px;
+  background-image: url("/assets/images/client-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  h2.title,
+  a,
+  span {
+    color: var(--white-color);
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,17 @@
+// Theme Css
+
+// .bg-primary {
+//   background-color: var(--primary-color) !important;
+// }
+
+h2.title {
+  color: var(--heading-color);
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.15;
+}
+
+.active {
+  color: var(--primary-color);
+}

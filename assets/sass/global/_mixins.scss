@@ -1,0 +1,4 @@
+/* Mixins */
+@mixin active($color) {
+  color: var($color) !important;
+}

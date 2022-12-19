@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+:root {
+  // Colors
+  --primary-color: #41228e;
+  --secondary-color: #e22b55;
+
+  --purple-color: #6b57a5;
+  --purple-light-color: #a495c9;
+  --purple-second-color: #7877ee;
+
+  --white-color: #ffffff;
+
+  --heading-color: #131a55;
+  --paragraph-color: #131a55;
+
+  // Transitions
+  --transition: all 0.3s ease-in;
+  --transition-long: all 0.5s ease-in;
+
+  // Fonts
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Roboto", sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  -moz-osx-font-smoothing: grayscale;
+  /* Firefox */
+  -webkit-font-smoothing: antialiased;
+  /* WebKit  */
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--paragraph-color);
+  font-family: var(--body-font);
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.4444444444444444;
+}
+
+h2 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
