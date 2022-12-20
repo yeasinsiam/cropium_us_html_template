@@ -1,15 +1,13 @@
 // Global Design
 @import "global/_mixins";
-@import "global/_links";
 @import "global/_global";
 @import "global/_theme";
 @import "global/_responsive";
 
-// Elements
-// @import "elements/preloader";
-@import "elements/button";
+// Components
+@import "components/button";
+@import "components/navbar";
 
 // Sections
-@import "sections/navbar";
 @import "sections/header";
 @import "sections/breadcrumb";

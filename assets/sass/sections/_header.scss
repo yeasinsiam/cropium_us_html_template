@@ -1,9 +1,9 @@
 .header-area {
-  width: 100%;
   position: absolute;
+  width: 100%;
   z-index: 9;
 
-  .header-nav {
+  .header-navbar {
     .nav-right-content {
       .select-language-link {
         color: var(--purple-color);
@@ -13,18 +13,20 @@
         margin: 0 5px;
         transition: var(--transition);
 
+        @mixin active() {
+          color: var(--white-color) !important;
+        }
+
         &.active {
-          @include active(--white-color);
+          @include active();
         }
         &:hover {
-          @include active(--white-color);
+          @include active();
         }
       }
 
-      .header-template-btn {
-        background-color: var(--purple-color);
+      .header-template-btn.hire-me-btn {
         margin-left: 60px;
-        padding: 12px 20px;
 
         @include tablet {
           margin-left: 30px;
@@ -32,11 +34,12 @@
         @include landscape-phone {
           margin-left: 30px;
         }
+      }
 
-        &:hover {
-          color: var(--white-color);
-          background-color: transparent;
-          border: 1px solid var(--purple-color);
+      @include portrait-phone() {
+        .select-language-link,
+        .header-template-btn.hire-me-btn {
+          display: none;
         }
       }
     }

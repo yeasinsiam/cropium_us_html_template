@@ -101,39 +101,47 @@ h2.title {
   display: flex;
   justify-content: space-between;
 }
-.navbar ul.navbar-nav {
+.navbar .navbar-nav {
   margin: auto;
 }
-.navbar ul.navbar-nav li.menu-item {
+.navbar .navbar-nav .nav-item {
   margin: 0 15px;
 }
-.navbar ul.navbar-nav li.menu-item a {
+.navbar .navbar-nav .nav-item .nav-link {
   color: var(--purple-light-color);
   font-size: 16px;
   font-weight: 500;
   font-family: var(--heading-font);
   text-transform: capitalize;
   line-height: 80px;
+  cursor: pointer;
+  display: block;
 }
-.navbar ul.navbar-nav li.menu-item.menu-item-has-children {
+.navbar .navbar-nav .nav-item.nav-item-has-children {
   position: relative;
 }
-.navbar ul.navbar-nav li.menu-item.menu-item-has-children .sub-menu {
+.navbar .navbar-nav .nav-item.nav-item-has-children > .nav-link::after {
+  content: "\f107";
+  font-family: "fontawesome";
+  color: var(--white-color);
+  margin-left: 10px;
+}
+.navbar .navbar-nav .nav-item.nav-item-has-children .sub-menu {
   opacity: 0;
   visibility: hidden;
   position: absolute;
   top: 110%;
   left: 0;
   z-index: 99;
-  min-width: 200px;
   padding-left: 0;
   background-color: var(--white-color);
+  min-width: 200px;
   transition: var(--transition);
 }
-.navbar ul.navbar-nav li.menu-item.menu-item-has-children .sub-menu .menu-item {
+.navbar .navbar-nav .nav-item.nav-item-has-children .sub-menu .nav-item {
   margin: 0;
 }
-.navbar ul.navbar-nav li.menu-item.menu-item-has-children .sub-menu .menu-item a {
+.navbar .navbar-nav .nav-item.nav-item-has-children .sub-menu .nav-item .nav-link {
   display: block;
   padding: 12px 30px;
   line-height: normal;
@@ -141,28 +149,22 @@ h2.title {
   background-color: var(--white-color);
   transition: var(--transition);
 }
-.navbar ul.navbar-nav li.menu-item.menu-item-has-children .sub-menu .menu-item a:hover {
+.navbar .navbar-nav .nav-item.nav-item-has-children .sub-menu .nav-item .nav-link:hover {
   color: var(--white-color);
   background-color: var(--purple-second-color);
 }
-.navbar ul.navbar-nav li.menu-item.menu-item-has-children:hover .sub-menu {
+.navbar .navbar-nav .nav-item.nav-item-has-children:hover .sub-menu {
   top: 100%;
   opacity: 1;
   visibility: visible;
 }
-.navbar ul.navbar-nav li.menu-item.menu-item-has-children::after {
-  content: "\f107";
-  font-family: "fontawesome";
-  color: var(--white-color);
-  margin-left: 5px;
-}
 
 .header-area {
-  width: 100%;
   position: absolute;
+  width: 100%;
   z-index: 9;
 }
-.header-area .header-nav .nav-right-content .select-language-link {
+.header-area .header-navbar .nav-right-content .select-language-link {
   color: var(--purple-color);
   font-size: 14px;
   font-weight: 500;
@@ -170,31 +172,30 @@ h2.title {
   margin: 0 5px;
   transition: var(--transition);
 }
-.header-area .header-nav .nav-right-content .select-language-link.active {
+.header-area .header-navbar .nav-right-content .select-language-link.active {
   color: var(--white-color) !important;
 }
-.header-area .header-nav .nav-right-content .select-language-link:hover {
+.header-area .header-navbar .nav-right-content .select-language-link:hover {
   color: var(--white-color) !important;
 }
-.header-area .header-nav .nav-right-content .header-template-btn {
-  background-color: var(--purple-color);
+.header-area .header-navbar .nav-right-content .header-template-btn.hire-me-btn {
   margin-left: 60px;
-  padding: 12px 20px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .header-area .header-nav .nav-right-content .header-template-btn {
+  .header-area .header-navbar .nav-right-content .header-template-btn.hire-me-btn {
     margin-left: 30px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .header-area .header-nav .nav-right-content .header-template-btn {
+  .header-area .header-navbar .nav-right-content .header-template-btn.hire-me-btn {
     margin-left: 30px;
   }
 }
-.header-area .header-nav .nav-right-content .header-template-btn:hover {
-  color: var(--white-color);
-  background-color: transparent;
-  border: 1px solid var(--purple-color);
+@media (max-width: 575.98px) {
+  .header-area .header-navbar .nav-right-content .select-language-link,
+  .header-area .header-navbar .nav-right-content .header-template-btn.hire-me-btn {
+    display: none;
+  }
 }
 
 .breadcrumb-area {
