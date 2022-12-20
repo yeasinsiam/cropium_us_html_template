@@ -1,6 +1,8 @@
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
+
   .navbar-nav {
     margin: auto;
 
@@ -67,6 +69,22 @@
             visibility: visible;
           }
         }
+      }
+    }
+  }
+
+  .nav-right-content {
+    display: inline-flex;
+    align-items: center;
+
+    .navbar-toggler {
+      margin-left: 20px;
+      .navbar-toggler-bar {
+        display: block;
+        height: 2px;
+        width: 24px;
+        background-color: var(--white-color);
+        margin: 4px 0;
       }
     }
   }

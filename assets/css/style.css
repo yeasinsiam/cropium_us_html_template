@@ -98,6 +98,7 @@ h2.title {
 }
 
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -158,13 +159,36 @@ h2.title {
   opacity: 1;
   visibility: visible;
 }
+.navbar .nav-right-content {
+  display: inline-flex;
+  align-items: center;
+}
+.navbar .nav-right-content .navbar-toggler {
+  margin-left: 20px;
+}
+.navbar .nav-right-content .navbar-toggler .navbar-toggler-bar {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background-color: var(--white-color);
+  margin: 4px 0;
+}
 
 .header-area {
   position: absolute;
   width: 100%;
   z-index: 9;
 }
-.header-area .header-navbar .nav-right-content .select-language-link {
+@media (max-width: 991.98px) {
+  .header-area .header-navbar .header-navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+  }
+}
+.header-area .header-navbar .header-nav-right-content .select-language-link {
   color: var(--purple-color);
   font-size: 14px;
   font-weight: 500;
@@ -172,28 +196,28 @@ h2.title {
   margin: 0 5px;
   transition: var(--transition);
 }
-.header-area .header-navbar .nav-right-content .select-language-link.active {
+.header-area .header-navbar .header-nav-right-content .select-language-link.active {
   color: var(--white-color) !important;
 }
-.header-area .header-navbar .nav-right-content .select-language-link:hover {
+.header-area .header-navbar .header-nav-right-content .select-language-link:hover {
   color: var(--white-color) !important;
 }
-.header-area .header-navbar .nav-right-content .header-template-btn.hire-me-btn {
+.header-area .header-navbar .header-nav-right-content .header-template-btn.hire-me-btn {
   margin-left: 60px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .header-area .header-navbar .nav-right-content .header-template-btn.hire-me-btn {
+  .header-area .header-navbar .header-nav-right-content .header-template-btn.hire-me-btn {
     margin-left: 30px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .header-area .header-navbar .nav-right-content .header-template-btn.hire-me-btn {
+  .header-area .header-navbar .header-nav-right-content .header-template-btn.hire-me-btn {
     margin-left: 30px;
   }
 }
-@media (max-width: 575.98px) {
-  .header-area .header-navbar .nav-right-content .select-language-link,
-  .header-area .header-navbar .nav-right-content .header-template-btn.hire-me-btn {
+@media (max-width: 767.98px) {
+  .header-area .header-navbar .header-nav-right-content .select-language-link,
+  .header-area .header-navbar .header-nav-right-content .header-template-btn.hire-me-btn {
     display: none;
   }
 }
