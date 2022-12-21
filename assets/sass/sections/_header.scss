@@ -36,13 +36,18 @@
       }
 
       .header-template-btn.hire-me-btn {
+        background-color: var(--purple-color);
         margin-left: 60px;
+        padding: 12px 20px;
 
-        @include tablet {
+        @include under-tablet {
           margin-left: 30px;
         }
-        @include landscape-phone {
-          margin-left: 30px;
+
+        &:hover {
+          color: var(--white-color);
+          background-color: transparent;
+          border: 1px solid var(--purple-color);
         }
       }
 
