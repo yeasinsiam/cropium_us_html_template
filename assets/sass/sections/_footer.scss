@@ -1,0 +1,26 @@
+.footer-area {
+  background: var(--primary-color);
+
+  background-image: url("/assets/images/footer-bg.png");
+  padding-top: 180px;
+
+  .footer-navbar {
+    .footer-navbar-nav {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+    }
+
+    @include under-landscape-phone() {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  .footer-copyright-text {
+    padding: 30px 0;
+    color: var(--purple-light-color);
+    text-align: center;
+  }
+}
