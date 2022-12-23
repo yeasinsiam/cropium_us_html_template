@@ -12,6 +12,7 @@
     <!-- Css -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -151,7 +152,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5 offset-lg-1">
             <div class="contact-right-content">
               <span class="content-title"> write to us </span>
               <form action="#">
@@ -167,6 +168,12 @@
                   class="template-input"
                   placeholder="Email"
                 />
+                <select name="occupation" id="">
+                  <option value="full">Full Stack Developer</option>
+                  <option value="frontend">Frontend Developer</option>
+                  <option value="backend">Backend Developer</option>
+                </select>
+
                 <textarea
                   class="template-textarea"
                   name="message"
@@ -207,5 +214,7 @@
 
     <script src="assets/js/jquery-2.2.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>

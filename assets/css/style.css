@@ -119,6 +119,24 @@ h4.title {
   border-radius: 5px;
 }
 
+.nice-select {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  border: 2px solid var(--white-second-color);
+  border-radius: 5px;
+  line-height: normal;
+}
+.nice-select span {
+  color: var(--heading-color);
+  font-size: 16px;
+}
+.nice-select .list {
+  top: 105%;
+  width: 100%;
+}
+
 /* Template Button */
 .template-btn {
   font-size: 14px;

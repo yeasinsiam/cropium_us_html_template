@@ -1,1 +1,3 @@
-console.log($("#name").data("name"));
+jQuery(document).ready(($) => {
+  $("select").niceSelect();
+});
