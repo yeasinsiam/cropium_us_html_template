@@ -13,6 +13,7 @@
   --purple-color: #6b57a5;
   --purple-light-color: #a495c9;
   --purple-second-color: #7877ee;
+  --purple-third-color: #efebff;
 
   --white-color: #ffffff;
   --white-second-color: #f5f5f5;
@@ -28,6 +29,9 @@
   // Transitions
   --transition: all 0.3s ease-in;
   --transition-long: all 0.5s ease-in;
+
+  // BoxShadow
+  --white-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.07);
 
   // Fonts
   --heading-font: "Roboto", sans-serif;
@@ -55,6 +59,7 @@ body {
   overflow-x: hidden;
   color: var(--paragraph-color);
   font-family: var(--body-font);
+  background-color: var(--white-color);
 }
 
 h2 {

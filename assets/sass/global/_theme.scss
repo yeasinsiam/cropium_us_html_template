@@ -19,6 +19,14 @@
   color: var(--yellow-color) !important;
 }
 
+.purple-second-color {
+  color: var(--purple-second-color) !important;
+}
+
+.bg-purple-third-color {
+  background-color: var(--purple-third-color) !important;
+}
+
 h2.title {
   color: var(--heading-color);
   font-size: 42px;
@@ -41,6 +49,13 @@ h4.title {
 
 .padding-120 {
   padding: 120px 0px !important;
+}
+
+.padding-top-120 {
+  padding-top: 120px !important;
+}
+.padding-bottom-90 {
+  padding-bottom: 120px !important;
 }
 
 .template-input,

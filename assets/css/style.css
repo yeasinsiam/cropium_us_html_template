@@ -10,6 +10,7 @@
   --purple-color: #6b57a5;
   --purple-light-color: #a495c9;
   --purple-second-color: #7877ee;
+  --purple-third-color: #efebff;
   --white-color: #ffffff;
   --white-second-color: #f5f5f5;
   --red-second-color: #faeef6;
@@ -19,6 +20,7 @@
   --paragraph-color: #131a55;
   --transition: all 0.3s ease-in;
   --transition-long: all 0.5s ease-in;
+  --white-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.07);
   --heading-font: "Roboto", sans-serif;
   --body-font: "Roboto", sans-serif;
 }
@@ -44,6 +46,7 @@ body {
   overflow-x: hidden;
   color: var(--paragraph-color);
   font-family: var(--body-font);
+  background-color: var(--white-color);
 }
 
 h2 {
@@ -85,6 +88,14 @@ ul {
   color: var(--yellow-color) !important;
 }
 
+.purple-second-color {
+  color: var(--purple-second-color) !important;
+}
+
+.bg-purple-third-color {
+  background-color: var(--purple-third-color) !important;
+}
+
 h2.title {
   color: var(--heading-color);
   font-size: 42px;
@@ -107,6 +118,14 @@ h4.title {
 
 .padding-120 {
   padding: 120px 0px !important;
+}
+
+.padding-top-120 {
+  padding-top: 120px !important;
+}
+
+.padding-bottom-90 {
+  padding-bottom: 120px !important;
 }
 
 .template-input,
@@ -398,6 +417,50 @@ h4.title {
 .contact-area .contact-right-content .contact-submit-btn {
   display: block !important;
   width: 100% !important;
+}
+
+.service-area .service-item-wrapper {
+  width: 350px;
+  transition: var(--transition);
+}
+.service-area .service-item-wrapper .service-item {
+  margin-bottom: 30px;
+}
+.service-area .service-item-wrapper .service-item .service-item-image {
+  position: relative;
+}
+.service-area .service-item-wrapper .service-item .service-item-image img {
+  width: 100%;
+}
+.service-area .service-item-wrapper .service-item .service-item-image i {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+}
+.service-area .service-item-wrapper .service-item .service-item-content {
+  padding: 30px;
+  box-shadow: var(--white-box-shadow);
+}
+.service-area .service-item-wrapper .service-item .service-item-content P {
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+.service-area .service-item-wrapper .service-item .service-item-content a {
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+.service-area .service-item-wrapper .service-item .service-item-content a:hover {
+  color: var(--secondary-color);
+}
+.service-area .service-item-wrapper:hover {
+  transform: translateY(-10px);
 }
 
 .footer-area {
