@@ -420,7 +420,6 @@ h4.title {
 }
 
 .service-area .service-item-wrapper {
-  width: 350px;
   transition: var(--transition);
 }
 .service-area .service-item-wrapper .service-item {
@@ -461,6 +460,48 @@ h4.title {
 }
 .service-area .service-item-wrapper:hover {
   transform: translateY(-10px);
+}
+
+.client-area {
+  margin-top: 100px;
+  background-color: var(--primary-color);
+  background-image: url("../images/client-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 115px 0 160px;
+}
+.client-area .section-title {
+  margin-bottom: 40px;
+}
+.client-area .section-title .title {
+  color: var(--white-color);
+  text-align: center;
+}
+.client-area .clients-slider .slider-item {
+  display: flex;
+  padding: 40px 20px;
+  background-color: var(--white-color);
+}
+.client-area .clients-slider .slider-item .item-content {
+  margin-left: 20px;
+}
+.client-area .clients-slider .slider-item .item-content p {
+  font-style: italic;
+  font-size: 18px;
+}
+.client-area .clients-slider .slider-item .item-content .client-info {
+  display: flex;
+  justify-content: space-between;
+}
+.client-area .clients-slider .slider-item .item-content .client-info .name {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.client-area .clients-slider .slider-item .item-content .client-info .rating {
+  color: var(--yellow-color);
 }
 
 .footer-area {

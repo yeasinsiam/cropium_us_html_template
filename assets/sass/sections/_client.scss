@@ -1,0 +1,48 @@
+.client-area {
+  margin-top: 100px;
+  background-color: var(--primary-color);
+  background-image: url("../images/client-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 115px 0 160px;
+
+  .section-title {
+    margin-bottom: 40px;
+    .title {
+      color: var(--white-color);
+      text-align: center;
+    }
+  }
+
+  .clients-slider {
+    .slider-item {
+      display: flex;
+      padding: 40px 20px;
+      background-color: var(--white-color);
+
+      .item-content {
+        margin-left: 20px;
+
+        p {
+          font-style: italic;
+          font-size: 18px;
+        }
+
+        .client-info {
+          display: flex;
+          justify-content: space-between;
+          .name {
+            color: var(--primary-color);
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: capitalize;
+          }
+          .rating {
+            color: var(--yellow-color);
+          }
+        }
+      }
+    }
+  }
+}
